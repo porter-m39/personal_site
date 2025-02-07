@@ -5,26 +5,33 @@
 }
 
 body{
-    min-height: 100vh;
+    min-height: 15vh;
     display: grid;
     /* place-content: center;   (don't like this one) */ 
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: darkgreen;
     color:whitesmoke;
 }
 
+title{
+    position: fixed;
+    left:0;
+    top: 0;
+    font-size: 2rem;
+}
+
 
 nav {
-    padding: 1rem;
-    background-color: #7dd61e;
+    padding: 1rem; 
     color: whitesmoke;
-    font-size: 2.5rem; 
+    background-color: rgb(62, 168, 62);
+    font-size: 2rem; 
     float: right;
     text-align: right;
 }
 
 nav a {
-    color:blue;
+    color: whitesmoke;
 }
 
 main {
@@ -33,8 +40,21 @@ main {
     place-content: center;
 }
 
+footer{
+    position: fixed;
+    bottom: 0; /* Position at bottom of page */
+    left: 0; /* Left of page */
+}
 
-h1, p {
+
+h1{
+    font-size: 2rem;
+    position: fixed;
+    left:0;
+    top:0;
+}
+
+p {
     text-align:left;
 }
 
@@ -51,4 +71,8 @@ a:hover { /* color of links when your cursor is on them */
     display: block;
     width: 100%;
     max-width: 600px;
+}
+
+img {
+    width : 200px
 }

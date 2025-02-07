@@ -1,10 +1,19 @@
 <!-- templates/home.html -->
 
 {% extends "base.html" %}
+{% load static %}
 
 {% block page_title %} 
-    This is my home page.
-{% endblock %}
+{% endblock page_title %}
 {% block page_content %}
-    <h1>Hi there, I'm Porter </h1> 
-{% endblock %}
+    <h1> Porter Morgan </h1>
+
+    <p> I'm a fifth year Math PhD student at the University of Massachussets Amherst, advised by Inanc Baykur. I study low-dimensional topology, specifically 4-manifolds. I'm interested in Lefschetz fibrations, nonorientable 4-manifolds, and exotic smooth structures. </p>
+
+    <img 
+        class="banner"
+        src={% static 'website_pic.jpg' %}
+        alt="Me, my mom, and our turkey"
+    />
+
+{% endblock page_content %}

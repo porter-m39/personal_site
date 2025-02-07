@@ -3,21 +3,30 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'style.css' %}">
 
-<nav>
-    <a href={% url 'homepage' %}>Home </a>
-    <a href= {% url 'about' %}>About </a>
-    <a href={% url 'research' %}> Research </a>
-</nav>
 <head>
     <meta charset="utf-8">
-    <title>My Math Website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block page_title %} Porter Morgan {% endblock page_title %} </title>
     
     <!-- can include a java script here -->
 </head>
 <body>
-    {% block page_title %}{% endblock page_title %}
-    {% block page_content %}{% endblock page_content %}
+    <header>
+        <nav>
+            <a href={% url 'homepage' %}>Home </a>  | 
+            <a href= {% url 'about' %}>About </a>  |  
+            <a href={% url 'research' %}> Research </a>
+        </nav>
+    </header>
+    
+    {% block page_content %}
+    <!-- Content from child templates goes here -->
+    {% endblock page_content %}
+
+    <footer>
+        <p>&copy; Add a note about when website was last updated? </p>
+    </footer>
 </body>
 </html>
