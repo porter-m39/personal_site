@@ -1,13 +1,19 @@
 <!-- templates/about.html -->
 
 {% extends "base.html" %}
+{% load static %}
 
-{% block page_title %} 
-{% endblock %}
+
 {% block page_content %}
-    <p> I'm from Michigan, my dog is Hudson. </p>
+    <h2> CV </h2>
+    <center>
+        <object
+            type="application/pdf"
+            data= {% static 'CV_draft.pdf' %}
+            width = "900"
+            height = "800"
 
-    <p> Starting a new line? </p>
-
-    <img src="website_pic.jpg" alt="Me, my mom, and our turkey">
+        >
+        </object>
+    </center>
 {% endblock %}

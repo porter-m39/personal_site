@@ -3,17 +3,19 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_title %} 
-{% endblock page_title %}
+
 {% block page_content %}
     <h1> Porter Morgan </h1>
 
-    <p> I'm a fifth year Math PhD student at the University of Massachussets Amherst, advised by Inanc Baykur. I study low-dimensional topology, specifically 4-manifolds. I'm interested in Lefschetz fibrations, nonorientable 4-manifolds, and exotic smooth structures. </p>
+    <p align="right"> I'm a fifth year Math PhD student at the University of Massachussets Amherst, advised by Inanc Baykur. I study low-dimensional topology, specifically 4-manifolds. I'm interested in Lefschetz fibrations, nonorientable 4-manifolds, and exotic smooth structures. </p>
 
     <img 
-        class="banner"
+        style = "float:right"
         src={% static 'website_pic.jpg' %}
         alt="Me, my mom, and our turkey"
-    />
+        height = "500"
+        width = "auto"
+    >
+    </img>
 
 {% endblock page_content %}

@@ -67,12 +67,12 @@ a:hover { /* color of links when your cursor is on them */
     opacity: .85;
 }
 
-.banner { 
+/*.banner { 
     display: block;
     width: 100%;
     max-width: 600px;
-}
+}*/
 
 img {
-    width : 200px
+    max-width : 100%
 }
