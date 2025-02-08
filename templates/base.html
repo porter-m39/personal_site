@@ -8,6 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank"> <!-- default setting: links open in new tab. -->
     <title>  Porter Morgan  </title>
     
     <!-- can include a java script here -->
@@ -15,9 +16,8 @@
 <body>
     <header>
         <nav>
-            <a href={% url 'homepage' %}>Home </a>  | 
-            <a href= {% url 'about' %}>About </a>  |  
-            <a href={% url 'research' %}> Research </a>
+            <a href={% url 'homepage'  %} target='_self' >Home </a>  | 
+            <a href= {% url 'about'  %} target='_self'>CV </a> 
         </nav>
     </header>
     

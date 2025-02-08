@@ -1,16 +1,16 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    /* box-sizing: border-box;  */
 }
 
 body{
     min-height: 15vh;
-    display: grid;
-    /* place-content: center;   (don't like this one) */ 
+    display: grid;  
     font-size: 1rem;
     background-color: darkgreen;
     color:whitesmoke;
+    max-width: 800px;
 }
 
 title{
@@ -26,7 +26,8 @@ nav {
     color: whitesmoke;
     background-color: rgb(62, 168, 62);
     font-size: 2rem; 
-    float: right;
+    position: fixed;
+    right:0;
     text-align: right;
 }
 
@@ -34,11 +35,11 @@ nav a {
     color: whitesmoke;
 }
 
-main {
+/* main {
     flex-grow: 1;
     display: grid;
     place-content: center;
-}
+} */
 
 footer{
     position: fixed;
@@ -48,19 +49,21 @@ footer{
 
 
 h1{
-    font-size: 2rem;
-    position: fixed;
-    left:0;
-    top:0;
+    font-size: 4rem;
+    margin-left:1rem;
+    margin-top:1rem;
+    margin-bottom: 2rem; 
 }
 
 p {
     text-align:left;
+    margin:1rem;
+    padding: auto; /* maybe this will help make nicer vertical spacing? */ 
 }
 
 a {  /* color of links */
     text-decoration: none;
-    color: #e3d026;
+    color: rgb(188, 241, 188);
 }
 
 a:hover { /* color of links when your cursor is on them */
@@ -73,6 +76,20 @@ a:hover { /* color of links when your cursor is on them */
     max-width: 600px;
 }*/
 
-img {
-    max-width : 100%
+img{
+    position: fixed;
+    max-width: 100%;
+    right: 6rem;
+    top: 10rem;
+}
+
+
+/* settings for bullet-point list */
+ul {
+    list-style-type: disc; /* Default bullet style (can be changed) */
+    padding-left: 20px;   /* Add some padding for better spacing */
+    margin-left:1rem;
+}
+li {
+    margin-bottom: 10px;  /* Add space between list items */
 }
