@@ -10,6 +10,14 @@
     <p> I'm a fifth year Math PhD student at the University of Massachussets Amherst, advised by <a href = "https://people.math.umass.edu/~baykur/"> Inanc Baykur</a>. I study low-dimensional topology, specifically 4-manifolds. I'm interested in Lefschetz fibrations, nonorientable 4-manifolds, and exotic smooth structures. </p>
 
     <p>
+        Here are my research projects.
+        <ul>
+            <li> <b>Irreducible 4-manifolds with order two fundamental group.</b> Joint with Mihail Arabadji. Preprint in preparation. </li>
+            <li> <b>Belted sum decompositions of fully augmented links.</b> with Brian Random, Dean Spyropoulos, Rolland Trapp, and Cameron Ziegler. <i>New York J. Math</i>, 31 (2025):1-42, 2024. </li>
+            <li> Broken Lefschetz fibrations on nonorientable 4-manifolds. Thesis topic, in progress.</li>
+        </ul>
+    </p>
+    <p>
         Here are a couple things I've been up to lately.
         <ul>
             <li> February 2025: Speaking at Louisiana State University's <a href="https://www.math.lsu.edu/calendar?selecttime=all_future&selectevent=All+seminars">Geometry and Topology Seminar</a> about my latest project on irreducible 4-manifolds with order two fundamental group. </li>
@@ -17,13 +25,29 @@
             <li> July 2024: Speaking at the <a href = "https://icerm.brown.edu/program/topical_workshop/tw-24-braids" >Braids Reuinion Workshop</a> hosted by ICERM in Providence, Rhode Island. </li>
         </ul>
     </p>
+    <p>
+        Here's some other stuff about me.
+        <ul>
+            <li> I love to cook, and maintain an active <a href = "https://saltoholic.wordpress.com/" >food blog</a>. Currently, I'm taking a break from updating the blog, and instead am working on building a blog site from scratch using the Django framework. </li>
+            <li> I have a <a href = "https://github.com/porter-m39" >Github page</a>, where you can find some web development projects, including the one that built this site. My math research is also up there, but those repositories are private, so you can't steal my ideas ;). </li>
+            <li> Other hobbies include playing billiards and cheering for the Detroit Lions. I used to say that I enjoy road cycling, but that was when I lived in Amherst (where the roads are good). Now that I live in Boston (where the roads are bad), I've switched to running. </li>
+        </ul>
+    </p>
         
-    <img 
-        src={% static 'website_pic.jpg' %}
-        alt="Me, my mom, and our turkey"
-        height = "500"
-        width = "auto"
-    >
-    </img>
+    <figure>
+        <img 
+            class = "framed"
+            src={% static 'website_pic.jpg' %}
+            alt="Me, my mom, and our turkey"
+            height = "500"
+            width = "auto"
+        >
+        </img>
+        <figcaption> Me, my mom, and our turkey. </figcaption>
+    </figure>
+
+    <footer>
+        <p> Last updated:  </p>
+    </footer>
 
 {% endblock page_content %}
