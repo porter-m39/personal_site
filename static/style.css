@@ -133,6 +133,6 @@ ul {
     margin-left:1rem;
 }
 li {
-    margin-bottom: 2rem;  /* Add space between list items */
+    margin-bottom: 10px;  /* Add space between list items */
     line-height: 1.2;
 }
