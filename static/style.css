@@ -55,19 +55,22 @@ h1{
     font-size: 4rem;
     margin-left:1rem;
     margin-top:1rem;
-    margin-bottom: 2rem; 
+    margin-bottom: .5rem;
 }
 
-h3{
+h2{
+    margin-left: 1rem;
     font-size: 1.5rem;
-    font-style: oblique;  
+    font-weight: normal;
+    font-style: italic;
+
 }
 
 h3{
     margin-left:1rem;
     padding: auto;
     line-height: 1.5;
-    font-style: normal;
+    font-weight: normal;
 }
 
 .gap_below{
