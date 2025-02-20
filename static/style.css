@@ -70,7 +70,8 @@ h3{
     margin-left:1rem;
     padding: auto;
     line-height: 1.5;
-    font-weight: normal;
+    font-weight: 500;
+    margin-bottom: .5rem;
 }
 
 .gap_below{
@@ -132,6 +133,6 @@ ul {
     margin-left:1rem;
 }
 li {
-    margin-bottom: 10px;  /* Add space between list items */
+    margin-bottom: 2rem;  /* Add space between list items */
     line-height: 1.2;
 }
