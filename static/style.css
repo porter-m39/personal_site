@@ -116,6 +116,7 @@ img.framed {
     padding: 15px;                /* Add space between the image and the border */
     background-color: rgb(62, 168, 62);    /* Add a background color behind the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 100%;
 }
 
 figcaption {
