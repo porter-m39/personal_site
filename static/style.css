@@ -38,11 +38,7 @@ nav a {
     color: whitesmoke;
 }
 
-/* main {
-    flex-grow: 1;
-    display: grid;
-    place-content: center;
-} */
+
 
 footer{
     position: relative;
@@ -101,15 +97,14 @@ object {
 }
 
 figure {
-    margin: 0;
-    text-align: center;
-    display: inline-block; /* Wrap the figure tightly around the content */
-    position: fixed;
-    max-width: 100%;
+    /* margin: 0; */
+    /* text-align: center; */
+    display: inline-block;  /*(Wrap the figure tightly around the content) */
+    position: fixed; 
+    max-width: 400px;
     right: 4rem;
     top: 10rem;
 }
-
 
 img.framed {
     /* border: 5px solid whitesmoke;       Add a solid border */
@@ -118,13 +113,6 @@ img.framed {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     max-width: 100%;
 }
-
-figcaption {
-    font-style: italic;
-    margin-top: 2px;
-    border-radius: 4px;
-}
-
 
 /* settings for bullet-point list */
 ul {
@@ -136,3 +124,22 @@ li {
     margin-bottom: 10px;  /* Add space between list items */
     line-height: 1.2;
 }
+
+
+/* 
+
+NOT USING
+
+figcaption {
+    font-style: italic;
+    margin-top: 2px;
+    border-radius: 4px;
+}
+
+*/
+
+/* main {
+    flex-grow: 1;
+    display: grid;
+    place-content: center;
+} */
