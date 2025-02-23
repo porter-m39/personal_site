@@ -5,52 +5,63 @@
 
 
 {% block page_content %}
-    <h1> Porter Morgan </h1>
+    
+<div style="display: grid; grid-template-columns: 800px 400px; gap: 15px;">
 
-    <p> I'm a fifth year Math PhD student at the University of Massachussets Amherst, advised by <a href = "https://people.math.umass.edu/~baykur/"> Inanc Baykur</a>. I study low-dimensional topology, specifically 4-manifolds. I'm interested in Lefschetz fibrations, nonorientable 4-manifolds, and exotic smooth structures. </p>
+    <div>
 
-    <p> Contact: pamorgan AT umass DOT edu  </p> 
-        
-    <p>
-        <h3> Papers and preprints: </h3>
-        <ul>
-            <li> <b>Irreducible 4-manifolds with order two fundamental group.</b> Joint with Mihail Arabadji. <i> Preprint,</i> 2025. <a href = "https://arxiv.org/pdf/2502.07689" > [PDF]</a> </li>
-            <li> <b>Belted sum decompositions of fully augmented links.</b> with Brian Random, Dean Spyropoulos, Rolland Trapp, and Cameron Ziegler. <i>New York J. Math</i>, 31 (2025):1-42, 2024. <a href="https://arxiv.org/pdf/2311.13540" > [PDF] </a> </li>
-        </ul>
-    </p>
-    <p>
-        <h3> Recent and upcoming activity: </h3>
-        <ul>
-            <li> May 2025: Speaking at "Women and Gender Minorities in Symplectic and Contact Geometry and Topology," special session of the <a href="https://awm-math.org/meetings/awm-research-symposium/" > AWM Research Symposium </a> in Madison, Wisconsin.</li>
-            <li> February 2025: Speaking at Louisiana State University's <a href="https://www.math.lsu.edu/calendar?selecttime=all_future&selectevent=All+seminars">Geometry and Topology Seminar</a> about my latest project on irreducible 4-manifolds with order two fundamental group. </li>
-            <li> January 2025: Attending the <a href = "https://sites.google.com/view/gt-log-cabin-workshop/home" >log cabin workshop</a> about foliations on 3-manifolds in St George, Utah. Co-organizing a mini-course about the Thurston norm and fibered 3-manifolds for this workshop. </li>
-            <li> July 2024: Speaking at the <a href = "https://icerm.brown.edu/program/topical_workshop/tw-24-braids" >Braids Reuinion Workshop</a> hosted by ICERM in Providence, Rhode Island. </li>
-        </ul>
-    </p>
-    <p>
-        <h3> Some other stuff about me: </h3>
-        <ul>
-            <li> I love to cook, and maintain an active <a href = "https://saltoholic.wordpress.com/" >food blog</a>. Currently, I'm taking a break from updating the blog, and instead am working on building a blog site from scratch using the Django framework. </li>
-            <li> I have a <a href = "https://github.com/porter-m39" >Github page</a>, where you can find some web development projects. My math research is also up there, but that stuff's top-secret, so those repositories are private. </li>
-            <li> Other hobbies include playing billiards and cheering for the Detroit Lions. I used to say that I enjoy road cycling, but that was when I lived in Amherst (where the roads are good). Now that I live in Boston (where the roads are bad), I've switched to running. </li>
-        </ul>
-    </p>
-        
-    <figure>
-        <img 
-            class = "framed"
-            src={% static 'website_pic.jpg' %}
-            {% comment %} srcset="small.jpg 480w, medium.jpg 800w, static/website_pic.jpg 1200w"
-            sizes="(max-width: 480px) 100vw, 480px" {% endcomment %}
-            alt = "picture of me"
-            width = "100%"
-            height = "auto"
-        >
-        </img>
-    </figure>
+        <h1 class=gap_below> Porter Morgan </h1>
 
-    <footer>
-        <p> Last updated: February 2025 </p>
-    </footer>
+        <p> I'm a fifth year Math PhD student at the University of Massachussets Amherst, advised by <a href = "https://people.math.umass.edu/~baykur/"> Inanc Baykur</a>. I study low-dimensional topology, specifically 4-manifolds. I'm interested in Lefschetz fibrations, nonorientable 4-manifolds, and exotic smooth structures. </p>
+
+        <p class=gap_below> Contact: pamorgan AT umass DOT edu  </p>
+            
+        <p>
+            <h3> Papers and preprints: </h3>
+            <ul class=gap_below>
+                <li> <b>Irreducible 4-manifolds with order two fundamental group.</b> Joint with Mihail Arabadji. <i> Preprint,</i> 2025. <a href = "https://arxiv.org/pdf/2502.07689" > [PDF]</a> </li>
+                <li> <b>Belted sum decompositions of fully augmented links.</b> with Brian Random, Dean Spyropoulos, Rolland Trapp, and Cameron Ziegler. <i>New York J. Math</i>, 31 (2025):1-42, 2024. <a href="https://arxiv.org/pdf/2311.13540" > [PDF] </a> </li>
+            </ul>
+        </p>
+
+        <p>
+            <h3> Recent and upcoming activity: </h3>
+            <ul class=gap_below>
+                <li> May 2025: Speaking at "Women and Gender Minorities in Symplectic and Contact Geometry and Topology," special session of the <a href="https://awm-math.org/meetings/awm-research-symposium/" > AWM Research Symposium </a> in Madison, Wisconsin.</li>
+                <li> February 2025: Speaking at Louisiana State University's <a href="https://www.math.lsu.edu/calendar?selecttime=all_future&selectevent=All+seminars">Geometry and Topology Seminar</a> about my latest project on irreducible 4-manifolds with order two fundamental group. </li>
+                <li> January 2025: Attending the <a href = "https://sites.google.com/view/gt-log-cabin-workshop/home" >log cabin workshop</a> about foliations on 3-manifolds in St George, Utah. Co-organizing a mini-course about the Thurston norm and fibered 3-manifolds for this workshop. </li>
+            </ul>
+        </p>
+        <p>
+            <h3> Some other stuff about me: </h3>
+            <ul class=gap_below>
+                <li> I love to cook, and maintain an active <a href = "https://saltoholic.wordpress.com/" >food blog</a>. Currently, I'm taking a break from updating the blog, and instead am working on building a blog site from scratch using the Django framework. </li>
+                <li> I have a <a href = "https://github.com/porter-m39" >Github page</a>, where you can find some web development projects. My math research is also up there, but that stuff's top-secret, so those repositories are private. </li>
+                <li> Other hobbies include playing billiards and cheering for the Detroit Lions. I used to say that I enjoy road cycling, but that was when I lived in Amherst (where the roads are good). Now that I live in Boston (where the roads are bad), I've switched to running. </li>
+            </ul>
+        </p>
+    
+        <footer>
+            <p> Last updated: February 2025 </p>
+        </footer>
+    </div>
+
+    <div>
+        <figure>
+            <img 
+                class = "framed"
+                src={% static 'website_pic.jpg' %}
+                {% comment %} srcset="small.jpg 480w, medium.jpg 800w, static/website_pic.jpg 1200w"
+                sizes="(max-width: 480px) 100vw, 480px" {% endcomment %}
+                alt = "picture of me"
+                width = "100%"
+                height = "auto"
+                style="margin-left: 5px; width: 400px; margin-top:8rem"
+            >
+            </img>
+        </figure>
+    </div>
+</div>
+
 
 {% endblock page_content %}
